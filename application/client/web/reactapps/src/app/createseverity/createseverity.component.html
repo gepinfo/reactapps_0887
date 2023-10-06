@@ -1,0 +1,31 @@
+<h2 class="screen-align">Createseverity</h2>
+<div id="template-irxy" class="gjs-row">
+    <div id="template-i2kk" class="gjs-cell">
+        <div id="template-ik0yd" class="gjs-row">
+            <div id="template-itkfv" class="gjs-cell">
+                <div id="template-ior8q" class="">Start tracking your Tasks & Issues
+                    <br id="template-ioa1d" class="">
+                </div>
+                <div id="template-iatid" class="">Create new severity</div>
+            </div>
+        </div>
+    </div>
+    <div id="template-ii59b" class="gjs-cell">
+        <label id="template-igsdy" class="label ">Name
+            <br id="template-igjgl" class="">
+        </label>
+        <input id="template-iwy0g" [(ngModel)]="severity.name" [ngModelOptions]="{standalone: true}"
+        ngDefaultControl class="input form-control " />
+    </div>
+    <div id="template-ingz" class="gjs-cell">
+        <label id="template-iu8sw" class="label ">Description</label>
+        <div id="template-iosb8" class="">
+            <ckeditor id="ckeditorspan" [(ngModel)]="severity.description" [ngModelOptions]="{standalone: true}"
+            ngDefaultControl [editor]="Editor" [config]="{toolbar:['heading','|','bold','italic','|','bulletedList','numberedList','|','insertTable','|','undo','redo']}"
+            class=""></ckeditor>
+        </div>
+    </div>
+    <div id="template-i0hso" class="gjs-cell">
+        <div id="template-ioixl" (click)="GpCreate()" class="button btn btn-primary ">Create</div>
+    </div>
+</div>
